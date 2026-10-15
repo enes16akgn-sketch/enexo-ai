@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090b">
+  <meta name="description" content="ENEXO AI — Otomasyon ve teknoloji. Çok yakında.">
+  <title>ENEXO AI — Çok Yakında</title>
+  <style>
+    :root { color-scheme: dark; --bg:#08090b; --fg:#f5f7fa; --muted:#a1a7b2; --line:rgba(255,255,255,.13); }
+    * { box-sizing: border-box; }
+    html, body { margin:0; min-height:100%; }
+    body {
+      min-height:100vh; display:grid; place-items:center; overflow:hidden;
+      background:
+        radial-gradient(ellipse at 50% 42%, rgba(104,118,143,.13), transparent 42%),
+        linear-gradient(135deg, #08090b 0%, #0d0f13 52%, #08090b 100%);
+      color:var(--fg); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    body::before {
+      content:""; position:fixed; inset:0; pointer-events:none; opacity:.2;
+      background-image:linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size:48px 48px;
+      mask-image:linear-gradient(to bottom, transparent, #000 18%, #000 82%, transparent);
+    }
+    main { position:relative; width:min(92%, 760px); text-align:center; padding:72px 24px; }
+    .mark { display:inline-flex; align-items:center; gap:10px; margin-bottom:38px; color:#cbd1db; font-size:11px; letter-spacing:.28em; text-transform:uppercase; }
+    .mark::before { content:""; width:7px; height:7px; border-radius:50%; background:#dce4f1; box-shadow:0 0 18px rgba(220,228,241,.7); }
+    h1 { margin:0; font-size:clamp(3.5rem, 12vw, 7.5rem); line-height:.95; letter-spacing:-.085em; font-weight:750; }
+    h1 span { color:#8f99aa; font-weight:450; }
+    .services { margin:27px 0 0; color:#d4d9e2; font-size:clamp(.72rem, 2.5vw, .9rem); letter-spacing:.25em; text-transform:uppercase; }
+    .rule { width:54px; height:1px; background:#737e90; margin:42px auto 30px; }
+    h2 { margin:0; font-size:clamp(1.15rem, 4vw, 1.65rem); font-weight:500; letter-spacing:.015em; }
+    .copy { margin:13px 0 0; color:var(--muted); font-size:1rem; line-height:1.7; }
+    .status { display:inline-flex; align-items:center; gap:9px; margin-top:35px; padding:11px 15px; border:1px solid var(--line); border-radius:999px; color:#c3cad5; font-size:.72rem; letter-spacing:.13em; text-transform:uppercase; }
+    .status i { width:6px; height:6px; display:inline-block; background:#cbd5e1; border-radius:50%; }
+    footer { margin-top:76px; color:#6f7784; font-size:.7rem; letter-spacing:.14em; text-transform:uppercase; }
+    @media (max-width:480px) { main { padding:52px 12px; } .mark { margin-bottom:30px; } .services { letter-spacing:.16em; } footer { margin-top:58px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark">Yeni bir dönem başlıyor</div>
+    <h1>ENEXO <span>AI</span></h1>
+    <p class="services">Otomasyon · Teknoloji</p>
+    <div class="rule"></div>
+    <h2>Çok yakında.</h2>
+    <p class="copy">Daha akıllı çözümler için çalışıyoruz.<br>Web sitemiz yapım aşamasındadır.</p>
+    <div class="status"><i></i> Website under construction</div>
+    <footer>ENEXO AI &nbsp;·&nbsp; Geleceği sadeleştir</footer>
+  </main>
+</body>
+</html>
